@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Lroot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/titlepic" />
+
+    <LinearLayout
+        android:background="#FFFFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button0"
+            android:layout_weight="1.0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FFFFFFFF"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fensi" />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_weight="1.0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FFFFFFFF"
+            android:scaleType="fitXY"
+            android:src="@mipmap/zan" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_weight="1.0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FFFFFFFF"
+            android:scaleType="fitXY"
+            android:src="@mipmap/at" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_weight="1.0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FFFFFFFF"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ping" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#161824" />
+</LinearLayout>
